@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "a-frame": "^0.0.0",
+    "aframe-teleport-controls": "^0.3.1",
+    "extras": "^0.12.1"
+  }
+}

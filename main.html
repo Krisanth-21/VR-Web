@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Wonders of the World</title>
+    <style>
+          body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            padding: 20px;
+            width: calc(33.33% - 20px);
+            box-sizing: border-box;
+        }
+
+        .card img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .card p {
+            margin-top: 10px;
+            justify-content: center;
+            display: flex;
+        }
+
+        button {
+            display: block;
+            text-align: center;
+            margin-left: 45%;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>7 Wonders of the World</h1>
+    <div class="container">
+        <div class="card">
+            <img src="./wonders_img/taj_mahal.jpg" alt="Wonder 1">
+            <p>Taj Mahal</p>
+        </div>
+        <div class="card">
+            <img src="./wonders_img/great_wall_of_chine.jpg" alt="Wonder 2">
+            <p>Great Wall of China</p>
+        </div>
+        <div class="card">
+            <img src="./wonders_img/colosseum.jpg" alt="Wonder 3">
+            <p>Colosseum</p>
+        </div>
+        <div class="card">
+            <img src="./wonders_img/christtheredeemer.jpg" alt="Wonder 4">
+            <p>Christ the Redeemer</p>
+        </div>
+        <div class="card">
+            <img src="./wonders_img/eiffel.jpg" alt="Wonder 5">
+            <p>Eiffel Tower</p>
+        </div>
+        <div class="card">
+            <img src="./wonders_img/qutab_minar.jpg" alt="Wonder 6">
+            <p>Qutab Minar</p>
+        </div>
+        <div class="card">
+            <img src="./wonders_img/pyramid.jpg" alt="Wonder 7">
+            <p>Pyramid</p>
+        </div>
+       
+    </div>
+    <button onclick="openVRPage()">Click here to explore in WebVR!</button>
+    <script>
+        function openVRPage() {
+            window.location.href = "index.html";
+        }
+    </script>
+</body>
+</html>

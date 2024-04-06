@@ -1,0 +1,115 @@
+<!--  http://localhost:8000/  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@7.4.0/dist/aframe-extras.min.js"></script>
+    <img id="sky" src="./assests/sky8.jpg">
+    <title>& Wonders of the World</title>
+</head>
+
+<body>
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="MainBuilding" src="assests/tunnel/scene.gltf"></a-asset-item>
+            <a-asset-item id="portal" src="assests/portal/scene.gltf"></a-asset-item>
+            <a-asset-item id="theatre" src="assests/theatre/scene.gltf"></a-asset-item>
+            <img id="ground" src="assests/floor.jpeg">
+            <a-asset-item id="taj_mahal" src="assests/7wonders/taj_mahal/scene.gltf"></a-asset-item>
+            <a-asset-item id="eiffel_tower" src="assests/7wonders/eiffel_tower/scene.gltf"></a-asset-item>
+            <a-asset-item id="great_wall_of_china" src="assests/7wonders/great_wall_of_china/scene.gltf"></a-asset-item>
+            <a-asset-item id="colosseum_rome_italy" src="assests/7wonders/colosseum_rome_italy/scene.gltf"></a-asset-item>
+            <a-asset-item id="christ_the_redeemer" src="assests/7wonders/christ_the_redeemer/scene.gltf"></a-asset-item>
+            <a-asset-item id="great_pyramid" src="pyramid/scene.gltf"></a-asset-item>
+            <a-asset-item id="qutub_minar" src="qutubminar/result.gltf"></a-asset-item>
+        </a-assets>
+
+        <!-- Camera -->
+        <a-entity position="450 80  200">
+            <a-camera wasd-controls="acceleration: 7000" id="camera"></a-camera>
+        </a-entity>
+
+
+        <!-- Sky -->
+        <a-sky src="#sky" radius="10000"></a-sky>
+        <!-- Ground -->
+        <a-plane material="color:#FFFFFF; src: #ground; repeat: 8000 8000" rotation="-90 0 0" scale="80000 80000 80000"
+            position="0 0 0" ></a-plane>
+<!-- 
+        <!-- Main Building 
+        <a-entity gltf-model="#MainBuilding" position="0 40 0"></a-entity>
+
+        <!-- Portal 
+        <a-entity id="portalEntity" gltf-model="#portal" position="3 49 -450" scale="40 40 40" teleport-listener
+            cursor-listener></a-entity>
+
+        <!-- Theatre 
+        <a-entity id="theatreEntity" gltf-model="#theatre" position="2000 150 -550" scale="40 40 40"
+            rotation="0 90 0"></a-entity> -->
+
+
+            
+  <!-- Taj Mahal Entity -->
+  <a-entity gltf-model="#taj_mahal" position="500 -250 0" scale="20 20 20"></a-entity>
+  <a-text value="The Taj Mahal" position="180 350 -230" scale="100 100 100" color="white"></a-text>
+  <!-- Eiffel Tower Entity -->
+  <a-entity gltf-model="#eiffel_tower" position="1300 30 -300" scale="70 70 70"></a-entity>
+  <a-text value="The Eiffel Tower" position="980 290 -230" scale="100 100 100" color="white"></a-text>
+  <!-- Christ The Redeemer Entity -->
+  <a-entity gltf-model="#christ_the_redeemer" position="2000 -141 -300" scale="80 80 80"></a-entity>
+  <a-text value="Christ The Redeemer" position="1750 300 -230" scale="100 100 100" color="white"></a-text>
+  <!-- Colosseum Entity-->
+  <a-entity gltf-model="#colosseum_rome_italy" position="3000 40 -100" scale="40 40 40" rotation="0 -90 0"></a-entity>
+  <a-text value="The Colosseum" position="2950 205x0 -200" scale="100 100 100" color="white" font: "https://www.dafont.com/master-2.font"></a-text>
+ 
+  <!-- Great Pyramid Entity -->
+  <a-entity gltf-model="#great_pyramid" position="4300 33 -400" scale="50 50 50"></a-entity>
+  <a-text value="The Great Pyramid" position="3950 205x0 -200" scale="100 100 100" color="white" ></a-text>
+
+  <!-- Great Wall of China Entity -->
+  <a-entity gltf-model="#great_wall_of_china" position="5450 -40 -500" scale="15 15 15"
+      rotation="0 -90 -10"></a-entity>
+      <a-text value="The Great Wall of China" position="5100 205x0 -200" scale="100 100 100" color="white" ></a-text>
+
+
+      
+
+  <!-- Qutub Minar Entity -->
+  <a-entity glb-model="#qutub_minar" position="5700 0 -300" scale="100 100 100"></a-entity> -->
+    </a-scene>
+
+
+
+
+<!-- 
+    <script>
+        AFRAME.registerComponent('teleport-listener', {
+            init: function () {
+                var portalEntity = this.el;
+                var camera = document.querySelector('#camera');
+
+                portalEntity.addEventListener('click', function () {
+
+                    camera.setAttribute('position', "2180 85 -1200");
+                });
+            }
+        });
+
+        AFRAME.registerComponent('cursor-listener', {
+            init: function () {
+                var portalEntity = this.el;
+                portalEntity.setAttribute('cursor', 'fuse: false; rayOrigin: mouse');
+            }
+        }); -->
+
+
+
+
+
+    </script>
+</body>
+
+</html>
