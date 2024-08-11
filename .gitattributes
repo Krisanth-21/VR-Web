@@ -1,4 +1,4 @@
 *.js linguist-detectable=false
-*.htmllinguist-detectable=false
+*.html linguist-detectable=false
 *.aframe linguist-detectable=true
 
